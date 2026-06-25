@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educator Portfolio | Inspiring Future Generations</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --edu-blue: #1e3a8a;
+        --edu-indigo: #4f46e5;
+        --edu-sage: #ecfdf5;
+        --edu-accent: #f59e0b;
+      }
+
+      body {
+        font-family:
+          "Segoe UI",
+          system-ui,
+          -apple-system,
+          sans-serif;
+        color: #334155;
+        background-color: #f8fafc;
+        scroll-behavior: smooth;
+      }
+
+      .text-edu-blue {
+        color: var(--edu-blue);
+      }
+      .text-edu-indigo {
+        color: var(--edu-indigo);
+      }
+      .bg-edu-gradient {
+        background: linear-gradient(135deg, var(--edu-blue), var(--edu-indigo));
+      }
+
+      .btn-edu {
+        background-color: var(--edu-indigo);
+        color: #fff;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+      .btn-edu:hover {
+        background-color: #4338ca;
+        color: #fff;
+      }
+
+      /* Card Hover Lift Effects */
+      .hover-lift {
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      .hover-lift:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 1rem 2rem rgba(79, 70, 229, 0.08) !important;
+      }
+
+      /* Badge/Icon Container styling */
+      .icon-wrapper {
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        background-color: #e0e7ff;
+        color: var(--edu-indigo);
+        font-size: 1.5rem;
+      }
+
+      /* Custom Timeline for Professional Milestones */
+      .edu-timeline {
+        position: relative;
+        padding-left: 24px;
+        border-left: 3px dashed #cbd5e1;
+      }
+      .edu-timeline-item {
+        position: relative;
+        padding-bottom: 2rem;
+      }
+      .edu-timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -33px;
+        top: 6px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: var(--edu-accent);
+        border: 3px solid #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main Navigation Bar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-edu-gradient sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2 fw-bold"
+          href="#"
+        >
+          <i class="bi bi-book-half text-warning"></i> Clara Mercer, M.Ed.
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#eduNavbar"
+          aria-controls="eduNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="eduNavbar">
+          <ul class="navbar-nav ms-auto gap-2 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#philosophy"
+                >Philosophy</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#specialties"
+                >Specialties</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#experience"
+                >Milestones</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-warning btn-sm text-dark px-4 fw-bold rounded-pill shadow-sm"
+                href="#connect"
+                >Get In Touch</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Friendly, High-Impact Hero Section -->
+    <section
+      class="bg-edu-gradient text-white py-5 d-flex align-items-center min-vh-100"
+    >
+      <div class="container py-4">
+        <div class="row align-items-center justify-content-between g-5">
+          <div class="col-lg-6 text-center text-lg-start">
+            <span
+              class="badge bg-warning text-dark px-3 py-2 rounded-pill mb-3 fw-semibold uppercase tracking-wide"
+              >Senior STEM Educator</span
+            >
+            <h1 class="display-4 fw-bold mb-3">
+              Shaping Minds, Building Futures.
+            </h1>
+            <p class="lead text-white-50 mb-4">
+              Dedicated and creative Middle School Science & Mathematics teacher
+              with over 8 years of classroom innovation experience. Combining
+              empirical structures with interactive student-centered
+              methodologies.
+            </p>
+            <div
+              class="d-sm-flex justify-content-center justify-content-lg-start gap-3"
+            >
+              <a
+                href="#connect"
+                class="btn btn-light btn-lg px-4 py-3 text-edu-indigo fw-bold shadow mb-3 mb-sm-0"
+                >Schedule Classroom Visit</a
+              >
+              <a
+                href="#philosophy"
+                class="btn btn-outline-light btn-lg px-4 py-3"
+                >Read My Philosophy</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-5 text-center">
+            <div class="position-relative d-inline-block">
+              <!-- High-quality friendly educator photo asset -->
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600"
+                alt="Clara Mercer Educator Portrait Headshot"
+                class="img-fluid rounded-4 shadow-lg border border-5 border-white-50"
+                style="max-width: 100%; height: auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Classroom Success Indicators Metric Bar -->
+    <section class="bg-white py-4 shadow-sm border-bottom">
+      <div class="container">
+        <div class="row g-4 text-center justify-content-center">
+          <div class="col-6 col-md-3">
+            <h3 class="display-5 fw-bold text-edu-blue mb-0">8+</h3>
+            <p class="text-muted small text-uppercase tracking-wider mb-0">
+              Years Active Teaching
+            </p>
+          </div>
+          <div class="col-6 col-md-3">
+            <h3 class="display-5 fw-bold text-edu-blue mb-0">1,200+</h3>
+            <p class="text-muted small text-uppercase tracking-wider mb-0">
+              Students Mentored
+            </p>
+          </div>
+          <div class="col-6 col-md-3">
+            <h3 class="display-5 fw-bold text-edu-blue mb-0">98%</h3>
+            <p class="text-muted small text-uppercase tracking-wider mb-0">
+              Parent-Teacher Satisfaction
+            </p>
+          </div>
+          <div class="col-6 col-md-3">
+            <h3 class="display-5 fw-bold text-edu-blue mb-0">15+</h3>
+            <p class="text-muted small text-uppercase tracking-wider mb-0">
+              Curriculum Designs Published
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Educational Philosophy Block -->
+    <section id="philosophy" class="py-5 my-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between g-5">
+          <div class="col-lg-6">
+            <h2 class="display-5 fw-bold text-edu-blue mb-4">
+              Every Child Deserves an Active Lens
+            </h2>
+            <p class="text-muted lead mb-4">
+              I believe true learning does not materialize via passive
+              memorization, but through iterative exploration, guided
+              trial-and-error, and constructive problem-solving scenarios.
+            </p>
+            <p class="text-muted mb-4">
+              My structured approach transitions the classroom environment into
+              a vibrant experimental lab ecosystem, ensuring diverse analytical
+              backgrounds and unique visual or kinetic learning types are fully
+              included.
+            </p>
+
+            <div
+              class="mt-4 p-4 bg-white border-start border-4 border-warning rounded-2 shadow-sm"
+            >
+              <h5 class="fw-bold text-edu-blue mb-2">
+                Academic Foundations & Credentials
+              </h5>
+              <p class="text-muted small mb-0">
+                • Master of Education (M.Ed.) Curriculum Development — Stanford
+                University<br />
+                • Bachelor of Science (B.S.) in Applied Physics — Boston
+                College<br />
+                • State Board Certified Educator: Secondary Physics & Advanced
+                Math Matrix
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="card border-0 shadow-sm p-4 rounded-4 bg-white">
+              <h4 class="fw-bold text-edu-blue mb-4 pb-2 border-bottom">
+                Classroom Culture Pillars
+              </h4>
+              <div class="d-flex gap-3 mb-4">
+                <i class="bi bi-heart-pulse text-danger fs-3"></i>
+                <div>
+                  <h5 class="fw-bold text-edu-blue mb-1">
+                    Empathetic Boundary Ecosystems
+                  </h5>
+                  <p class="text-muted small mb-0">
+                    Constructing safe mental fields where conceptual mistakes
+                    are celebrated as positive milestones toward total core
+                    knowledge acquisition.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex gap-3 mb-4">
+                <i class="bi bi-cpu text-edu-indigo fs-3"></i>
+                <div>
+                  <h5 class="fw-bold text-edu-blue mb-1">
+                    Socio-Technological Balance
+                  </h5>
+                  <p class="text-muted small mb-0">
+                    Interweaving modern software simulators and smart boards
+                    alongside real physical tools to keep tactical engineering
+                    hands-on.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex gap-3">
+                <i class="bi bi-people text-success fs-3"></i>
+                <div>
+                  <h5 class="fw-bold text-edu-blue mb-1">
+                    Open Parent Channels
+                  </h5>
+                  <p class="text-muted small mb-0">
+                    Eliminating the communication void with weekly progress
+                    updates and accessible structural check-ins.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid Layout of Academic Specialties -->
+    <section
+      id="specialties"
+      class="bg-white py-5 shadow-sm border-top border-bottom"
+    >
+      <div class="container my-4">
+        <div class="text-center mb-5 max-w-xl mx-auto">
+          <h2 class="display-5 fw-bold text-edu-blue">
+            Primary Teaching Specialties
+          </h2>
+          <p class="text-muted">
+            Targeted structural capabilities ensuring strict conceptual
+            comprehension metrics.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- STEM Specialty -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 bg-light p-4 rounded-4 hover-lift">
+              <div class="icon-wrapper">
+                <i class="bi bi-rocket-takeoff"></i>
+              </div>
+              <h4 class="fw-bold text-edu-blue mb-3">
+                Interactive STEM Curriculums
+              </h4>
+              <p class="text-muted small mb-0">
+                Designing responsive modules featuring real robotics
+                configurations, electrical prototyping basics, and observational
+                physics experiments.
+              </p>
+            </div>
+          </div>
+          <!-- Math Frameworks -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 bg-light p-4 rounded-4 hover-lift">
+              <div class="icon-wrapper"><i class="bi bi-calculator"></i></div>
+              <h4 class="fw-bold text-edu-blue mb-3">
+                Differentiated Mathematics
+              </h4>
+              <p class="text-muted small mb-0">
+                Tailoring core algebra and geometry concepts to match individual
+                capability tiers, utilizing relatable real-world economic
+                scenarios.
+              </p>
+            </div>
+          </div>
+          <!-- Digital Learning -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 bg-light p-4 rounded-4 hover-lift">
+              <div class="icon-wrapper"><i class="bi bi-laptop"></i></div>
+              <h4 class="fw-bold text-edu-blue mb-3">
+                Blended Classroom Designs
+              </h4>
+              <p class="text-muted small mb-0">
+                Deploying cloud learning hubs, micro-quizzes, and interactive
+                instructional videos to support remote or asynchronous study
+                blocks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chronological Professional Career Progression/Milestones -->
+    <section id="experience" class="py-5 my-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold text-edu-blue">Professional Journey</h2>
+          <p class="text-muted">
+            Milestones and evolutionary chapters across my career in
+            institutional education.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="edu-timeline">
+              <div class="edu-timeline-item">
+                <span class="badge bg-edu-blue text-white fw-bold mb-2"
+                  >2023 - Present</span
+                >
+                <h4 class="fw-bold text-edu-blue">
+                  Lead Science Instructor — Beacon Academy
+                </h4>
+                <p class="text-muted">
+                  Headed the regional overhaul of the middle school physics
+                  syllabus, introducing interactive lab modules. Spearheaded a
+                  14% year-over-year elevation in unified state standardized
+                  test pass rates.
+                </p>
+              </div>
+
+              <div class="edu-timeline-item">
+                <span class="badge bg-edu-blue text-white fw-bold mb-2"
+                  >2019 - 2023</span
+                >
+                <h4 class="fw-bold text-edu-blue">
+                  STEM Department Specialist — Oakridge Academy
+                </h4>
+                <p class="text-muted">
+                  Integrated modern computer aided design (CAD) software tools
+                  into standard extracurricular student engineering clubs.
+                  Honored with the school's regional *Distinguished Teacher of
+                  the Year* award in 2021.
+                </p>
+              </div>
+
+              <div class="edu-timeline-item mb-0">
+                <span class="badge bg-edu-blue text-white fw-bold mb-2"
+                  >2018 - 2019</span
+                >
+                <h4 class="fw-bold text-edu-blue">
+                  Junior Mathematics Educator — Crestview Middle
+                </h4>
+                <p class="text-muted">
+                  Designed remedial instructional programs for struggling
+                  student math cohorts, establishing peer-mentorship clubs that
+                  successfully restored baseline grade expectations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Communication Contact / Consultation Request Block -->
+    <section id="connect" class="bg-white py-5 border-top shadow-sm">
+      <div class="container my-4">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <h2 class="display-5 fw-bold text-edu-blue mb-3">Let's Connect</h2>
+            <p class="text-muted mb-4">
+              Are you a parent seeking a student progress conference, or a
+              district representative sourcing specialized curriculum
+              consulting? Reach out via the secure channel matrix below.
+            </p>
+
+            <div class="p-4 bg-light rounded-4 border">
+              <h5 class="fw-bold text-edu-blue mb-3">
+                <i class="bi bi-clock text-warning me-2"></i>Conference
+                Availabilities
+              </h5>
+              <p class="text-muted small mb-2">
+                Standard operational planning and parent-teacher meeting slots
+                reserved weekly:
+              </p>
+              <p class="fw-bold text-dark small mb-1">
+                <i class="bi bi-envelope text-edu-indigo me-2"></i>
+                c.mercer@academy.edu
+              </p>
+              <p class="fw-bold text-dark small mb-0">
+                <i class="bi bi-calendar-event text-edu-indigo me-2"></i>
+                Tuesdays & Thursdays (3:30 PM — 5:00 PM)
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="card border-0 bg-light p-4 p-md-5 rounded-4 shadow-sm">
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label text-muted small fw-semibold"
+                      >Your Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control border-0 p-3 rounded-3 bg-white"
+                      placeholder="e.g. Sarah Jenkins"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label text-muted small fw-semibold"
+                      >Affiliation/Role</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control border-0 p-3 rounded-3 bg-white"
+                      placeholder="e.g. Parent, Principal"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label text-muted small fw-semibold"
+                      >Contact Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control border-0 p-3 rounded-3 bg-white"
+                      placeholder="name@domain.com"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label text-muted small fw-semibold"
+                      >Primary Reason for Contact</label
+                    >
+                    <select class="form-select border-0 p-3 rounded-3 bg-white">
+                      <option selected>Select Inquiry Objective...</option>
+                      <option>Parent-Teacher Progress Review</option>
+                      <option>Curriculum Collaboration / Speaking Event</option>
+                      <option>Institutional Hiring / Recruitment</option>
+                      <option>General Educational Query</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label text-muted small fw-semibold"
+                      >Message Overview</label
+                    >
+                    <textarea
+                      class="form-control border-0 p-3 rounded-3 bg-white"
+                      rows="4"
+                      placeholder="Detail student names or event parameters here..."
+                    ></textarea>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <button
+                      type="submit"
+                      class="btn btn-edu btn-lg w-100 rounded-pill shadow-sm"
+                    >
+                      Send Secure Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clean Portfolio Footer -->
+    <footer class="bg-dark text-white-50 py-4 text-center border-top">
+      <div class="container">
+        <p class="mb-0 small">
+          &copy; 2026 Clara Mercer, M.Ed. All Rights Reserved. Education is the
+          ignition of a spark.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

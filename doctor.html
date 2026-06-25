@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Sarah Ahmed | Consultant Cardiologist</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/mixins/_banner.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --teal-primary: #0f766e;
+        --teal-dark: #115e59;
+        --teal-light: #ccfbf1;
+      }
+
+      body {
+        font-family:
+          "Segoe UI",
+          system-ui,
+          -apple-system,
+          sans-serif;
+        color: #334155;
+        scroll-behavior: smooth;
+      }
+
+      .text-teal {
+        color: var(--teal-primary);
+      }
+
+      .bg-teal {
+        background-color: var(--teal-primary);
+      }
+
+      .bg-teal-gradient {
+        background: linear-gradient(
+          135deg,
+          var(--teal-dark),
+          var(--teal-primary)
+        );
+      }
+
+      /* Hover animations for cards */
+      .hover-lift {
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      .hover-lift:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1) !important;
+      }
+
+      /* Custom icon wrapper background */
+      .icon-box {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        background-color: var(--teal-light);
+        color: var(--teal-primary);
+        font-size: 1.75rem;
+      }
+
+      .navbar-brand,
+      .btn-teal {
+        font-weight: 600;
+      }
+
+      .btn-teal {
+        background-color: var(--teal-primary);
+        color: #fff;
+      }
+      .btn-teal:hover {
+        background-color: var(--teal-dark);
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-teal sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <i class="bi bi-heart-pulse-fill text-warning"></i> Dr. Sarah Ahmed
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-2">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-warning btn-sm text-dark px-3 rounded-pill fw-bold"
+                href="#contact"
+                >Book Appointment</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="hero bg-teal-gradient text-white py-5 min-vh-100 d-flex align-items-center"
+    >
+      <div class="container">
+        <div class="row align-items-center justify-content-between g-5">
+          <div class="col-lg-6 text-center text-lg-start">
+            <span
+              class="badge bg-warning text-dark px-3 py-2 rounded-pill mb-3 fw-semibold uppercase tracking-wider"
+              >Cardiology Specialist</span
+            >
+            <h1 class="display-3 fw-bold mb-3">Dr. Sarah Ahmed</h1>
+            <h3 class="h4 text-light fw-light mb-4">Consultant Cardiologist</h3>
+            <p class="lead text-white-50 mb-5">
+              Dedicated to providing expert heart care with over 10 years of
+              experience in diagnosing and treating cardiovascular diseases.
+            </p>
+            <div
+              class="d-sm-flex justify-content-center justify-content-lg-start gap-3"
+            >
+              <a
+                href="#contact"
+                class="btn btn-light btn-lg px-4 py-3 rounded-pill text-teal fw-semibold shadow"
+                >Book Consultation</a
+              >
+              <a
+                href="#services"
+                class="btn btn-outline-light btn-lg px-4 py-3 rounded-pill"
+                >Our Services</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-5 text-center">
+            <div class="position-relative d-inline-block">
+              <img
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600"
+                alt="Dr. Sarah Ahmed"
+                class="img-fluid rounded-4 shadow-lg border border-4 border-white-50"
+                style="max-width: 100%; height: auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 my-5">
+      <div class="container">
+        <div class="text-center max-w-xl mx-auto mb-5">
+          <h2 class="display-5 fw-bold text-teal">About Me</h2>
+          <p class="text-muted">
+            Compassionate care focused on your heart health.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 hover-lift">
+              <div class="card-body">
+                <div class="icon-box mb-3"><i class="bi bi-briefcase"></i></div>
+                <h3 class="h4 card-title text-teal mb-3">
+                  Professional Background
+                </h3>
+                <p class="card-text text-muted">
+                  Board-certified cardiologist specializing in preventive
+                  cardiology, advanced hypertension management, and non-invasive
+                  cardiac diagnostics.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5">
+            <div class="card h-100 border-0 shadow-sm rounded-4 p-4 hover-lift">
+              <div class="card-body">
+                <div class="icon-box mb-3">
+                  <i class="bi bi-mortarboard"></i>
+                </div>
+                <h3 class="h4 card-title text-teal mb-3">
+                  Education & Credentials
+                </h3>
+                <ul class="list-unstyled text-muted lh-lg mb-0">
+                  <li>
+                    <i class="bi bi-check-circle text-teal me-2"></i>
+                    <strong>MBBS</strong> – Dhaka Medical College
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle text-teal me-2"></i>
+                    <strong>MD (Cardiology)</strong> – BSMMU
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle text-teal me-2"></i> Advanced
+                    Cardiac Care Certification
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-white py-5 shadow-sm">
+      <div class="container my-4">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold text-teal">Medical Services</h2>
+          <p class="text-muted">
+            Comprehensive heart care tailored to your needs.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Service 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="card h-100 border-0 bg-light p-4 text-center rounded-4 hover-lift"
+            >
+              <div class="icon-box mx-auto mb-3">
+                <i class="bi bi-heart-pulse"></i>
+              </div>
+              <h4 class="h5 card-title mb-2">Cardiac Consultation</h4>
+              <p class="small text-muted mb-0">
+                In-depth evaluations and risk mitigation blueprints.
+              </p>
+            </div>
+          </div>
+          <!-- Service 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="card h-100 border-0 bg-light p-4 text-center rounded-4 hover-lift"
+            >
+              <div class="icon-box mx-auto mb-3">
+                <i class="bi bi-activity"></i>
+              </div>
+              <h4 class="h5 card-title mb-2">ECG & Screening</h4>
+              <p class="small text-muted mb-0">
+                Precise structural tests and advanced screening.
+              </p>
+            </div>
+          </div>
+          <!-- Service 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="card h-100 border-0 bg-light p-4 text-center rounded-4 hover-lift"
+            >
+              <div class="icon-box mx-auto mb-3">
+                <i class="bi bi-heart"></i>
+              </div>
+              <h4 class="h5 card-title mb-2">Heart Disease Treatment</h4>
+              <p class="small text-muted mb-0">
+                Evidence-based treatment protocols for chronic conditions.
+              </p>
+            </div>
+          </div>
+          <!-- Service 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="card h-100 border-0 bg-light p-4 text-center rounded-4 hover-lift"
+            >
+              <div class="icon-box mx-auto mb-3">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4 class="h5 card-title mb-2">Preventive Care</h4>
+              <p class="small text-muted mb-0">
+                Diet, lifestyle adjustments, and preventative metrics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-teal text-white py-5">
+      <div class="container my-3">
+        <div class="row g-4 text-center">
+          <div class="col-6 col-md-3">
+            <p class="display-4 fw-bold mb-1">10+</p>
+            <p class="text-white-50 small mb-0">Years Experience</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <p class="display-4 fw-bold mb-1">5000+</p>
+            <p class="text-white-50 small mb-0">Patients Treated</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <p class="display-4 fw-bold mb-1">95%</p>
+            <p class="text-white-50 small mb-0">Patient Satisfaction</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <p class="display-4 fw-bold mb-1">24/7</p>
+            <p class="text-white-50 small mb-0">Emergency Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="reviews" class="py-5 my-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold text-teal">Patient Reviews</h2>
+          <p class="text-muted">
+            Real feedback from individuals back on track to full health.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <div
+              class="card h-100 border-0 shadow-sm p-4 rounded-4 position-relative"
+            >
+              <span
+                class="position-absolute top-0 end-0 p-4 text-teal-light display-1 opacity-25 lh-1 font-serif"
+                >“</span
+              >
+              <div class="card-body">
+                <div class="text-warning mb-3">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p class="card-text text-muted italic fs-5">
+                  "Excellent doctor. Very professional and caring throughout the
+                  treatment."
+                </p>
+                <h5 class="h6 mb-0 mt-3 fw-bold text-dark">- Patient Review</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5">
+            <div
+              class="card h-100 border-0 shadow-sm p-4 rounded-4 position-relative"
+            >
+              <span
+                class="position-absolute top-0 end-0 p-4 text-teal-light display-1 opacity-25 lh-1 font-serif"
+                >“</span
+              >
+              <div class="card-body">
+                <div class="text-warning mb-3">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                </div>
+                <p class="card-text text-muted italic fs-5">
+                  "Explained everything clearly and helped me systematically
+                  improve my heart health."
+                </p>
+                <h5 class="h6 mb-0 mt-3 fw-bold text-dark">- Patient Review</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white py-5 border-top">
+      <div class="container my-4">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <h2 class="display-5 fw-bold text-teal mb-3">
+              Book an Appointment
+            </h2>
+            <p class="text-muted mb-4">
+              Schedule your consultation today or get in touch through our
+              emergency helpline pathways.
+            </p>
+
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex align-items-center gap-3">
+                <div class="icon-box flex-shrink-0">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div>
+                  <p class="text-muted small mb-0">Phone</p>
+                  <p class="fw-bold mb-0">+880 1XXX-XXXXXX</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="icon-box flex-shrink-0">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div>
+                  <p class="text-muted small mb-0">Email</p>
+                  <p class="fw-bold mb-0">doctor@example.com</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="icon-box flex-shrink-0">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div>
+                  <p class="text-muted small mb-0">Chamber</p>
+                  <p class="fw-bold mb-0">Dhaka, Bangladesh</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <!-- Modern Form Layout addition -->
+            <div class="card border-0 bg-light p-4 p-md-5 rounded-4 shadow-sm">
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label text-muted small fw-semibold"
+                      >Your Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control border-0 p-3 rounded-3"
+                      placeholder="John Doe"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label text-muted small fw-semibold"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="tel"
+                      class="form-control border-0 p-3 rounded-3"
+                      placeholder="+880..."
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label text-muted small fw-semibold"
+                      >Preferred Date</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control border-0 p-3 rounded-3"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label text-muted small fw-semibold"
+                      >Message/Notes</label
+                    >
+                    <textarea
+                      class="form-control border-0 p-3 rounded-3"
+                      rows="3"
+                      placeholder="Brief details about your condition..."
+                    ></textarea>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <button
+                      type="submit"
+                      class="btn btn-teal btn-lg w-100 rounded-pill shadow-sm"
+                    >
+                      Submit Request
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-dark text-white-50 py-4 text-center border-top border-secondary"
+    >
+      <div class="container">
+        <p class="mb-0 small">
+          &copy; 2026 Dr. Sarah Ahmed. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
